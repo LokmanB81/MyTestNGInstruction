@@ -1,0 +1,18 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="Tum Testler" verbose="2" parallel="classes" thread-count="2">
+    <test name="Regression">
+        <classes>
+            <class name="tests.day22.C02_HardAssert"/>
+            <class name="tests.day21.C01_ScreenShotReusableMethod"/>
+            <class name="tests.day21.C02_WindowHandlesReusablemethods"/>
+            <class name="tests.day23.C01_DataProvider"/>
+            <class name="tests.day22.C03_SoftAssert"/>
+        </classes>
+    </test>
+
+</suite>
+
+        <!--TestNG de .xml file ile parallel test yapmak istersek suite tag'ından sonra parallel tag'ı ile
+        kaç browser'da çalıştırmak istersek thread-count takını kullanırız.
+         -->
